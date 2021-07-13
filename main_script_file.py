@@ -17,9 +17,9 @@ def parsing_and_scrape_data(raw_data):
 
     for items in g_data:
         product_details = {}
-        atag = items.a
-        cite = items.cite
-        title = (atag.text)
+        atag= items.a
+        cite= items.cite
+        title  = (atag.text)
         link = (cite.text)
         print(link)
         product_details["Title"] = title
